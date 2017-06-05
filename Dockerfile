@@ -1,3 +1,5 @@
 FROM node:latest
 
-CMD ["node", "main.js"]
+ADD main.js /data/
+
+CMD ["node", "/data/main.js"]
